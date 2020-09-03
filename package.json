@@ -1,0 +1,10 @@
+{
+  "name": "sodium",
+  "repository": "https://github.com/denosaurs/sodium.git",
+  "author": "Filippo Rossi",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "terser": "^5.2.1"
+  }
+}

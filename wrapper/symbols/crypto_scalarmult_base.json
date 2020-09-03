@@ -1,0 +1,22 @@
+{
+        "name": "crypto_scalarmult_base",
+        "dependencies": ["_crypto_scalarmult_base", "_crypto_scalarmult_scalarbytes"],
+        "type" : "function",
+        "inputs": [
+                {
+                        "name": "privateKey",
+                        "length": "libsodium._crypto_scalarmult_scalarbytes()",
+                        "type": "buf"
+                }
+        ],
+        "outputs": [
+                {
+                        "type": "buf",
+                        "name": "publicKey",
+                        "length": "libsodium._crypto_scalarmult_scalarbytes()"
+                }
+        ],
+        "target": "libsodium._crypto_scalarmult_base(publicKey_address, privateKey_address) | 0",
+        "assert_retval": [{"condition": "=== 0", "or_else_throw": "insecure scalar"}],
+        "return": "_format_output(publicKey, outputFormat)"
+}

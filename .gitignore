@@ -1,0 +1,9 @@
+# OS files
+.DS_Store
+.cache
+
+# IDE
+.vscode
+
+# node
+node_modules
