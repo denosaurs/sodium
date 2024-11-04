@@ -6,6 +6,4 @@ export {
   assertNotEquals,
 } from "https://deno.land/std@0.67.0/testing/asserts.ts";
 
-export {
-  encode,
-} from "https://deno.land/std@0.67.0/encoding/utf8.ts";
+export { encode } from "https://deno.land/std@0.67.0/encoding/utf8.ts";
