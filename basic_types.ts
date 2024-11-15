@@ -657,31 +657,6 @@ export interface Sodium {
     outputFormat: StringOutputFormat,
   ): StringCryptoKX;
 
-  crypto_pwhash(
-    keyLength: number,
-    password: string | Uint8Array,
-    salt: Uint8Array,
-    opsLimit: number,
-    memLimit: number,
-    algorithm: number,
-    outputFormat?: Uint8ArrayOutputFormat | null,
-  ): Uint8Array;
-  crypto_pwhash(
-    keyLength: number,
-    password: string | Uint8Array,
-    salt: Uint8Array,
-    opsLimit: number,
-    memLimit: number,
-    algorithm: number,
-    outputFormat: StringOutputFormat,
-  ): string;
-
-  crypto_pwhash_str(
-    password: string | Uint8Array,
-    opsLimit: number,
-    memLimit: number,
-  ): string;
-
   crypto_pwhash_str_needs_rehash(
     hashed_password: string | Uint8Array,
     opsLimit: number,
